@@ -1,0 +1,87 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+        x:Class="FullStackedSplineAreaChart.MainWindow"
+        Title="MainWindow" Height="520" Width="555">
+    <Grid>
+        <dxc:ChartControl>
+            <dxc:ChartControl.Diagram>
+                <dxc:XYDiagram2D>
+                    <dxc:XYDiagram2D.Series>
+                        <dxc:SplineAreaFullStackedSeries2D DisplayName="Cluster">
+                            <dxc:SplineAreaFullStackedSeries2D.Points>
+                                <dxc:SeriesPoint Argument="11/01/1997" Value="10" />
+                                <dxc:SeriesPoint Argument="11/01/1999" Value="962" />
+                                <dxc:SeriesPoint Argument="11/01/2001" Value="18832" />
+                                <dxc:SeriesPoint Argument="11/01/2003" Value="264332" />
+                                <dxc:SeriesPoint Argument="11/01/2005" Value="1112753" />
+                                <dxc:SeriesPoint Argument="11/01/2007" Value="4169758" />
+                            </dxc:SplineAreaFullStackedSeries2D.Points>
+                            <dxc:SplineAreaFullStackedSeries2D.Label>
+                                <dxc:SeriesLabel Visible="True" TextPattern="{}{VP:P0}"/>
+                            </dxc:SplineAreaFullStackedSeries2D.Label>
+                        </dxc:SplineAreaFullStackedSeries2D>
+                        <dxc:SplineAreaFullStackedSeries2D DisplayName="Constellations">
+                            <dxc:SplineAreaFullStackedSeries2D.Points>
+                                <dxc:SeriesPoint Argument="11/01/1997" Value="391" />
+                                <dxc:SeriesPoint Argument="11/01/1999" Value="4082" />
+                                <dxc:SeriesPoint Argument="11/01/2001" Value="21932" />
+                                <dxc:SeriesPoint Argument="11/01/2003" Value="64195" />
+                                <dxc:SeriesPoint Argument="11/01/2005" Value="78473" />
+                                <dxc:SeriesPoint Argument="11/01/2007" Value="101830" />
+                            </dxc:SplineAreaFullStackedSeries2D.Points>
+                            <dxc:SplineAreaFullStackedSeries2D.Label>
+                                <dxc:SeriesLabel Visible="True" TextPattern="{}{VP:P0}"/>
+                            </dxc:SplineAreaFullStackedSeries2D.Label>
+                        </dxc:SplineAreaFullStackedSeries2D>
+                        <dxc:SplineAreaFullStackedSeries2D DisplayName="MPP">
+                            <dxc:SplineAreaFullStackedSeries2D.Points>
+                                <dxc:SeriesPoint Argument="11/01/1997" Value="11994" />
+                                <dxc:SeriesPoint Argument="11/01/1999" Value="38377" />
+                                <dxc:SeriesPoint Argument="11/01/2001" Value="88395" />
+                                <dxc:SeriesPoint Argument="11/01/2003" Value="200715" />
+                                <dxc:SeriesPoint Argument="11/01/2005" Value="1107271" />
+                                <dxc:SeriesPoint Argument="11/01/2007" Value="2694582" />
+                            </dxc:SplineAreaFullStackedSeries2D.Points>
+                            <dxc:SplineAreaFullStackedSeries2D.Label>
+                                <dxc:SeriesLabel Visible="True" TextPattern="{}{VP:P0}"/>
+                            </dxc:SplineAreaFullStackedSeries2D.Label>
+                        </dxc:SplineAreaFullStackedSeries2D>
+                        <dxc:SplineAreaFullStackedSeries2D  DisplayName="SMP">
+                            <dxc:SplineAreaFullStackedSeries2D.Points>
+                                <dxc:SeriesPoint Argument="11/01/1997" Value="4502" />
+                                <dxc:SeriesPoint Argument="11/01/1999" Value="7518" />
+                                <dxc:SeriesPoint Argument="11/01/2001" Value="5818" />
+                                <dxc:SeriesPoint Argument="11/01/2003" Value="0" />
+                            </dxc:SplineAreaFullStackedSeries2D.Points>
+                            <dxc:SplineAreaFullStackedSeries2D.Label>
+                                <dxc:SeriesLabel Visible="True" TextPattern="{}{VP:P0}"/>
+                            </dxc:SplineAreaFullStackedSeries2D.Label>
+                        </dxc:SplineAreaFullStackedSeries2D>
+                    </dxc:XYDiagram2D.Series>
+                    <dxc:XYDiagram2D.AxisY>
+                        <dxc:AxisY2D>
+                            <dxc:AxisY2D.WholeRange>
+                                <dxc:Range MinValue="0" MaxValue="1" SideMarginsValue="0"/>
+                            </dxc:AxisY2D.WholeRange>
+                            <dxc:AxisY2D.Label>
+                                <dxc:AxisLabel />
+                            </dxc:AxisY2D.Label>
+                            <dxc:AxisY2D.NumericOptions>
+                                <dxc:NumericOptions Format="Percent" Precision="0" />
+                            </dxc:AxisY2D.NumericOptions>
+                        </dxc:AxisY2D>
+                    </dxc:XYDiagram2D.AxisY>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl.Diagram>
+            <dxc:ChartControl.Legend>
+                <dxc:Legend HorizontalPosition="Right" VerticalPosition="TopOutside"
+                            Orientation="Horizontal" />
+            </dxc:ChartControl.Legend>
+            <dxc:ChartControl.Titles>
+                <dxc:Title Dock="Top" HorizontalAlignment="Center" Content="Architecture Share Over Time (GF)" />
+            </dxc:ChartControl.Titles>
+        </dxc:ChartControl>
+    </Grid>
+</Window>
