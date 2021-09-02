@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullStackedSplineAreaChart", "FullStackedSplineAreaChart\FullStackedSplineAreaChart.csproj", "{80B9BD7C-7A49-4519-8350-903D8460D060}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullStackedSplineAreaChart", "FullStackedSplineAreaChart\FullStackedSplineAreaChart.Net5.csproj", "{80B9BD7C-7A49-4519-8350-903D8460D060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
